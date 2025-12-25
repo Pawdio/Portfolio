@@ -1,0 +1,112 @@
+.stages {
+    padding: 100px 0;
+}
+
+.stage-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 350px);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    grid-template-areas:
+        "s1 s1 s2"
+        "s1 s1 s3"
+        "s4 s5 s6";
+}
+
+.stage1 {
+    grid-area: s1;
+    position: relative;
+    border-radius: 20px;
+}
+
+.stage2 {
+    grid-area: s2;
+    background-color: var(--card-bg-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 15px;
+
+}
+
+.stage2 h2 {
+    font-size: 6rem;
+    color: var(--accent-color-2);
+}
+
+.stage2 p {
+    font-size: 2rem;
+    align-self: flex-end;
+}
+
+.stage3 {
+    grid-area: s3;
+    background: linear-gradient(50.02deg, #0BB6FF -2.98%, #7E62B3 51.58%, #9452A5 52.7%, #FF055F 100%);
+    border-radius: 20px;
+}
+
+.stage4 {
+    grid-area: s4;
+    background-color: var(--card-bg-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 15px;
+}
+
+.stage4 h2 {
+    font-size: 6rem;
+    color: var(--accent-color-2);
+}
+
+.stage4 p {
+    font-size: 2rem;
+    align-self: flex-end;
+}
+
+.stage5 {
+    grid-area: s5;
+    background: linear-gradient(227.5deg, #0BB6FF 5.18%, #F8964F 60%, #FF055F 100%);
+    border-radius: 20px;
+}
+
+.stage6 {
+    grid-area: s6;
+    background-color: var(--card-bg-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 15px;
+}
+
+.stage6 h2 {
+    font-size: 6rem;
+    color: var(--accent-color-2);
+}
+
+.stage6 p {
+    font-size: 2rem;
+    align-self: flex-end;
+}
+
+.stage-bg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+.stage-phone {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 20px;
+}

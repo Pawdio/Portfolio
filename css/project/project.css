@@ -1,0 +1,94 @@
+.project {
+    padding: 100px 0;
+}
+
+.project-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.project-container input {
+    opacity: 0;
+    z-index: -20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.project-list {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.project-list label {
+    color: white;
+    border-radius: 20px;
+    width: 33%;
+    height: 100%;
+    flex-grow: 1;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.project-images {
+    display: flex;
+    height: 700px;
+    margin-top: 20px;
+
+}
+
+.project1-radio:checked~.project-list .project1 {
+    background: var(--main-gradient);
+}
+
+.project2-radio:checked~.project-list .project2 {
+    background: var(--main-gradient);
+}
+
+.project3-radio:checked~.project-list .project3 {
+    background: var(--main-gradient);
+}
+
+.project-images-1 {
+    width: 0;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.project1-radio:checked~.project-images .project-images-1 {
+    width: 100%;
+}
+
+.project2-radio:checked~.project-images .project-images-2 {
+    width: 100%;
+}
+
+.project3-radio:checked~.project-images .project-images-3 {
+    width: 100%;
+}
+
+.project-images-2 {
+    width: 0;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.project-images-3 {
+    width: 0;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+
+
+.stages {
+    
+}
